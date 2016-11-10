@@ -1,7 +1,21 @@
-/* 
+/*
 
 -------------------------------------------------------------
 
 NAVIGATION
 
 */
+
+nav{
+  font-size:1em;
+}
+
+nav ul {
+  padding:0px;
+  margin:0px;
+}
+
+nav ul li {
+  margin:0px 15px 0px 0px;
+  display:inline;
+}

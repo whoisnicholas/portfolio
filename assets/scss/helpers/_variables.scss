@@ -1,4 +1,4 @@
-/* 
+/*
 
 -------------------------------------------------------------
 
@@ -19,10 +19,10 @@ $bold    : 700;
 // Primary Font
 $primary-font-family : 'Helvetica', sans-serif;
 $primary-font-weight : $regular;
-$primary-font-size   : 23px;
+$primary-font-size   : 16px;
 $primary-font-color  : #757575;
 $primary-link-color  : #757575;
-$primary-line-height : 36px;
+$primary-line-height : 2;
 
 // Transitions
 $default-transition-property : all;
@@ -31,4 +31,4 @@ $default-transition-function : false;
 $default-transition-delay    : false;
 
 // Easing
-$easeOutQuint: cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+$easeOutQuint: cubic-bezier(0.230, 1.000, 0.320, 1.000);

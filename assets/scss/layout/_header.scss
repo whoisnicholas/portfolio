@@ -1,7 +1,16 @@
-/* 
+/*
 
 -------------------------------------------------------------
 
 HEADER
 
 */
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height:60px;
+  line-height: 60px;
+  padding: 40px 40px 0px 40px;
+}

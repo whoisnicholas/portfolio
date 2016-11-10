@@ -8,7 +8,8 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache'),
     del = require('del'),
-    runSequence = require('run-sequence');
+    runSequence = require('run-sequence'),
+    autoprefixer = require('gulp-autoprefixer');
 
 // Browser Sync
 gulp.task('browserSync', function() {
@@ -23,6 +24,10 @@ gulp.task('browserSync', function() {
 gulp.task('sass', function() {
   return gulp.src('assets/scss/main.scss') // Gets all files ending with.scss in assets/scss and children dirs
   .pipe(sass()) // Using gulp-sass
+  .pipe(autoprefixer({
+      browsers: ['last 2 versions', 'Firefox >= 3'],
+      cascade: false
+  }))
   .pipe(gulp.dest('assets/css'))
   .pipe(browserSync.reload({
     stream:true
@@ -83,6 +88,6 @@ gulp.task('default', function (callback) {
 gulp.task('watch', ['browserSync', 'sass'], function (){
   gulp.watch('assets/**/*.scss', ['sass']);
   // Reloads the browser whenever HTML or JS files change
-  gulp.watch('/*.html', browserSync.reload);
+  gulp.watch('*.html', browserSync.reload);
   gulp.watch('assets/**/*.js', browserSync.reload);
 });
