@@ -1,7 +1,46 @@
-/* 
+/*
 
 -------------------------------------------------------------
 
 HOME PAGE STYLES
 
 */
+
+.home{
+  margin-top: 20vh;
+  padding: 0px 0px 0px 112px;
+}
+
+.home h1 {
+  color:$black;
+  font-size: 5.75rem;
+  font-weight: $light;
+  letter-spacing: -6px;
+}
+
+.main-sub-text {
+  padding:0px;
+  margin:0px;
+}
+
+.quick-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 112px 0px 0px;
+}
+
+// Define keyframes
+@keyframes blink {
+  0% { opacity: 1; }
+  // 50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#time{
+  margin-left: 10px;
+}
+
+#time span {
+animation: blink 1s infinite linear;
+}

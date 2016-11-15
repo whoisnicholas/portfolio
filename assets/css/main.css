@@ -11,7 +11,7 @@ VARIABLES
 
 */
 /* Base */
-/* 
+/*
 
 -------------------------------------------------------------
 
@@ -23,7 +23,13 @@ body {
   font-weight: 300;
   font-size: 16px;
   color: #757575;
-  line-height: 2; }
+  line-height: 2;
+}
+
+h1, h2, h3, h4 {
+  margin: 0px;
+  padding: 0px;
+}
 
 /*
 
@@ -33,41 +39,57 @@ GLOBAL
 
 */
 html, body {
-  height: 100%; }
+  height: 100%;
+}
 
 body {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+}
 
 body.body-modal-open {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 #viewport {
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+}
 
 .container {
   margin: auto;
   width: 1440px;
-  position: relative; }
-  @media (max-width: 1150px) {
-    .container {
-      width: 900px; } }
-  @media (max-width: 960px) {
-    .container {
-      width: 700px; } }
-  @media (max-width: 767px) {
-    .container {
-      width: 100%; } }
+  position: relative;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
 
 /* general */
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .borderbox {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-box-sizing: border-box;
+}
 
 .position-center {
   position: absolute;
@@ -75,15 +97,20 @@ img {
   top: 0px;
   right: 0px;
   left: 0px;
-  margin: auto; }
+  margin: auto;
+}
 
 @media (max-width: 960px) {
   .hide-ipad {
-    display: none; } }
+    display: none;
+  }
+}
 
 @media (max-width: 767px) {
   .hide-mobile {
-    display: none; } }
+    display: none;
+  }
+}
 
 /* Layout */
 /*
@@ -106,7 +133,8 @@ header {
   justify-content: space-between;
   height: 60px;
   line-height: 60px;
-  padding: 40px 40px 0px 40px; }
+  padding: 20px 40px 0px 40px;
+}
 
 /*
 
@@ -116,15 +144,18 @@ NAVIGATION
 
 */
 nav {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 nav ul {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+}
 
 nav ul li {
   margin: 0px 15px 0px 0px;
-  display: inline; }
+  display: inline;
+}
 
 /* 
 
@@ -134,10 +165,67 @@ FOOTER
 
 */
 /* Sections */
-/* 
+/*
 
 -------------------------------------------------------------
 
 HOME PAGE STYLES
 
 */
+.home {
+  margin-top: 20vh;
+  padding: 0px 0px 0px 112px;
+}
+
+.home h1 {
+  color: #000000;
+  font-size: 5.75rem;
+  font-weight: 100;
+  letter-spacing: -6px;
+}
+
+.main-sub-text {
+  padding: 0px;
+  margin: 0px;
+}
+
+.quick-links {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 20px 112px 0px 0px;
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#time {
+  margin-left: 10px;
+}
+
+#time span {
+  -moz-animation: blink 1s infinite linear;
+  animation: blink 1s infinite linear;
+}

@@ -22,7 +22,7 @@ body.body-modal-open { overflow:hidden; }
 
 .container {
 	margin:auto;
-	width:1440px; 
+	width:1440px;
 	position:relative;
 
 	@include breakpoint(large) {

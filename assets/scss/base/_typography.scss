@@ -1,4 +1,4 @@
-/* 
+/*
 
 -------------------------------------------------------------
 
@@ -6,8 +6,8 @@ TYPOGRAPHY
 
 */
 
-body { 
-	font-family:$primary-font-family; 
+body {
+	font-family:$primary-font-family;
 	font-weight:$primary-font-weight;
 	font-size:$primary-font-size;
 	color:$primary-font-color;
@@ -15,7 +15,8 @@ body {
 }
 
 h1, h2, h3, h4 {
-
+	margin:0px;
+	padding:0px;
 }
 
 h1 {

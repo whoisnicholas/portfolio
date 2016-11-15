@@ -20,10 +20,15 @@ gulp.task('browserSync', function() {
   })
 })
 
+var sassOptions = {
+errLogToConsole: true,
+outputStyle: 'expanded'
+};
+
 // Requires the gulp-sass plugin
 gulp.task('sass', function() {
   return gulp.src('assets/scss/main.scss') // Gets all files ending with.scss in assets/scss and children dirs
-  .pipe(sass()) // Using gulp-sass
+  .pipe(sass(sassOptions).on('error', sass.logError)) // Using gulp-sass
   .pipe(autoprefixer({
       browsers: ['last 2 versions', 'Firefox >= 3'],
       cascade: false
