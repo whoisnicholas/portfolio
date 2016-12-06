@@ -7,27 +7,30 @@ HOME PAGE STYLES
 */
 
 .home{
-  margin-top: 20vh;
   padding: 0px 0px 0px 112px;
 }
 
 .home h1 {
+  margin-top: 16vh;
   color:$black;
-  font-size: 5.75rem;
+  font-size: 5.25rem;
   font-weight: $light;
-  letter-spacing: -6px;
+  letter-spacing: -4px;
 }
 
 .main-sub-text {
   padding:0px;
   margin:0px;
+  font-weight: $bold;
+  color: $red;
 }
 
 .quick-links{
+  margin-top: 8vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 20px 112px 0px 0px;
+  padding: 0px 300px 0px 0px;
 }
 
 // Define keyframes
