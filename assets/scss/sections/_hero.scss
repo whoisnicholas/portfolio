@@ -6,16 +6,41 @@ HOME PAGE STYLES
 
 */
 
-.home{
-  padding: 0px 0px 0px 112px;
+.top-elements {
+  margin-top: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo{
+  height:48px;
+  width:38px;
+}
+
+.logo-subtext {
+  line-height: 28px;
+  font-size: .875rem;
+  @include breakpoint(medium) {
+		display:none;
+	}
+}
+
+.current-time {
+  font-weight: $medium;
+  color:$black;
 }
 
 .home h1 {
   margin-top: 16vh;
   color:$black;
-  font-size: 5.25rem;
+  font-size: 4.75rem;
   font-weight: $light;
   letter-spacing: -4px;
+
+  @include breakpoint(large) {
+		font-size:3.95rem;
+	}
 }
 
 .main-sub-text {
@@ -26,12 +51,53 @@ HOME PAGE STYLES
 }
 
 .quick-links{
-  margin-top: 8vh;
+  margin-top: 0vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 0px 300px 0px 0px;
 }
+
+
+ul.contacts{
+  list-style: none;
+  margin:0px;
+  padding:0px;
+  line-height: 24px;
+}
+
+ul.contacts li {
+  display: inline;
+  padding-left: 10px;
+}
+
+ul.contacts li a {
+  text-decoration: none;
+  color:$light-grey;
+  font-weight: $light;
+}
+
+.colab{
+  margin-top: 16vh;
+  color:$dark-grey;
+}
+
+.client-list {
+  margin-top: 2vh;
+}
+
+ul.studios{
+  font-size:12px;
+  letter-spacing: 0.07em;
+  list-style: none;
+  padding: 0px;
+  margin-top:0px;
+  color:$light-grey;
+}
+
+.client-list h4 {
+  color: $dark-grey;
+}
+
 
 // Define keyframes
 @keyframes blink {
@@ -47,3 +113,5 @@ HOME PAGE STYLES
 #time span {
 animation: blink 1s infinite linear;
 }
+
+// BREAK POINTS
