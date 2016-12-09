@@ -1,0 +1,147 @@
+// _columns
+
+$gutter: 10px;
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 - + $gutter;
+}
+
+.col-* {
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-1 { width: percentage(1 / 24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-2 { width: percentage(2/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-3 { width: percentage(3/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-4 { width: percentage(4/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-5 { width: percentage(5/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-6 { width: percentage(6/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-7 { width: percentage(7/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-8 { width: percentage(8/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-9 { width: percentage(9/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-10 { width: percentage(10/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-11 { width: percentage(11/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-12 { width: percentage(12/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-13 { width: percentage(13/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-14 { width: percentage(14/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-15 { width: percentage(15/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-16 { width: percentage(16/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-17 { width: percentage(17/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-18 { width: percentage(18/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-19 { width: percentage(19/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-20 { width: percentage(20/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-21 { width: percentage(21/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-22 { width: percentage(22/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-23 { width: percentage(23/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.col-24 { width: percentage(24/24);
+  box-sizing: border-box;
+  padding: 0 $gutter;
+}
+
+.offset-2 {
+  margin-left: percentage(2/24);
+}
+
+.offset-right-2 {
+  margin-right: percentage(2/24);
+}
+
+.offset-right-6 {
+  margin-right: percentage(6/24);
+}
