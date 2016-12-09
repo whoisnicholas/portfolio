@@ -27,7 +27,7 @@
   -webkit-transform: $str;
      -moz-transform: $str;
       -ms-transform: $str;
-          transform: $str; 
+          transform: $str;
 }
 
 @mixin clearfix {
@@ -48,13 +48,13 @@
   }
   @-moz-keyframes $animation-name {
     @content;
-  }  
+  }
   @-ms-keyframes $animation-name {
     @content;
   }
   @-o-keyframes $animation-name {
     @content;
-  }  
+  }
   @keyframes $animation-name {
     @content;
   }
@@ -65,7 +65,7 @@
   -moz-animation: #{$str};
   -ms-animation: #{$str};
   -o-animation: #{$str};
-  animation: #{$str};      
+  animation: #{$str};
 }
 
 @mixin animation-delay($delay) {
@@ -99,7 +99,7 @@
 
 @mixin breakpoint($point) {
   @if $point == xlarge {
-    @media (min-width: 1800px) { @content; }
+    @media (max-width: 1440px) { @content; }
   }
   @else if $point == large {
     @media (max-width: 1150px) { @content; }

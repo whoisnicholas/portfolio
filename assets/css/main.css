@@ -62,9 +62,15 @@ body.body-modal-open {
   position: relative;
 }
 
+@media (max-width: 1440px) {
+  .container {
+    width: 1150px;
+  }
+}
+
 @media (max-width: 1150px) {
   .container {
-    width: 100%;
+    width: 900px;
   }
 }
 
@@ -477,6 +483,12 @@ ul.studios {
 .client-list h4 {
   color: #404042;
   font-size: 14px;
+}
+
+@media (max-width: 1150px) {
+  .col-6.offset-2.studios-left {
+    width: 40%;
+  }
 }
 
 @-moz-keyframes blink {

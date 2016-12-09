@@ -99,6 +99,12 @@ ul.studios{
   font-size: 14px;
 }
 
+.col-6.offset-2.studios-left{
+  @include breakpoint(large) {
+		width:40%;
+	}
+}
+
 
 // Define keyframes
 @keyframes blink {

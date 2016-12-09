@@ -25,8 +25,12 @@ body.body-modal-open { overflow:hidden; }
 	width:1440px;
 	position:relative;
 
+	@include breakpoint(xlarge) {
+		width:1150px;
+	}
+
 	@include breakpoint(large) {
-		width:100%;
+		width:900px;
 	}
 	@include breakpoint(medium) {
 		width:700px;
