@@ -14,8 +14,8 @@ HOME PAGE STYLES
 }
 
 .logo{
-  height:48px;
-  width:38px;
+  display:block;
+  width:48px;
 }
 
 .logo-subtext {
@@ -27,7 +27,7 @@ HOME PAGE STYLES
 }
 
 .current-time {
-  font-weight: $medium;
+  font-weight: $regular;
   color:$black;
 }
 
@@ -96,6 +96,7 @@ ul.studios{
 
 .client-list h4 {
   color: $dark-grey;
+  font-size: 14px;
 }
 
 
